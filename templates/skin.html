@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;900&display=swap" rel="stylesheet">
+  <title>1909331 | Sarah Hanifah | TP4</title>
+  <style>
+    body {
+      background: #f5f5f5;
+    }
+    .layout {
+      display: grid;
+      grid-template-columns: 30% 70%;
+    }
+    form {
+      background: white;
+      padding: 20px;
+      margin-right: 10px;
+      border-radius: 8px;
+      -webkit-box-shadow: 27px 32px 24px -17px rgba(214,214,214,0.21);
+      -moz-box-shadow: 27px 32px 24px -17px rgba(214,214,214,0.21);
+      box-shadow: 27px 32px 24px -17px rgba(214,214,214,0.21);
+    }
+    .content {
+      background: white;
+      padding: 20px;
+      margin-left: 15px;
+      border-radius: 8px;
+      -webkit-box-shadow: 27px 32px 24px -17px rgba(214,214,214,0.21);
+      -moz-box-shadow: 27px 32px 24px -17px rgba(214,214,214,0.21);
+      box-shadow: 27px 32px 24px -17px rgba(214,214,214,0.21);
+    }
+    body {
+      font-family: 'Poppins', sans-serif;
+    }
+    thead {
+      font-weight: 500;
+    }
+    .title {
+      margin-top: 20px;
+      margin-left: 50px;
+      margin-bottom: 20px;
+    }
+    h1 {
+      font-style: bold;
+      font-weight: 900;
+      font-size: 125px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="title">
+    <h1>Ascent Pet Shop</h1>
+  </div>
+  <div class="layout">
+    <div style="margin-left: 50px">
+      <form action="index.php" method="POST" style="align-content: center;">
+        <h3>Tambah Pakan</h3>
+        <div class="form-row">
+          <div class="form-group col">
+            <label for="tkategori_hewan">Kategori Hewan</label>
+            <select id="inputState" name="tkategori_hewan" required  class="form-control">
+              <option selected>Kucing</option>
+              <option>Anjing</option>
+              <option>Ikan</option>
+              <option>Burung</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group col">
+            <label for="tmerk">Merk</label>
+            <input class="form-control" type="text" name="tmerk" required />
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group col">
+            <label for="tberat">Berat</label>
+            <input class="form-control" type="text" name="tberat" required />
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group col">
+            <label for="tstok">Stok</label>
+            <input class="form-control" type="text" name="tstok" required />
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group col">
+            <label for="tharga">Harga Satuan</label>
+            <input class="form-control" type="text" name="tharga" required />
+          </div>
+        </div>
+        <button type="submit" name="add" class="btn btn-primary">Add</button>
+      </form>
+      <!-- Tabel 1 - Task -->
+      
+    </div>
+    <div style="margin-right: 50px;" class="content">
+      <h3>Stok Pakan</h3>
+      <!-- TABEL1 -->
+      <table class="table table-hover">
+        <thead>
+          <tr>
+            <td>No</td>
+            <td>Kategori</td>
+            <td>Merk</td>
+            <td>Berat</td>
+            <td>Harga</td>
+            <td>Stok</td>
+            <td>Aksi</td>
+          </tr>
+        </thead>
+        <tr>
+          <!-- DATA YG AKAN DIGANTI -->
+          DATA_TABEL
+        </tr>
+    
+      </table>
+    </div>
+
+  </div>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+  </script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+  </script>
+</body>
+
+</html>
